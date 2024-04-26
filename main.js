@@ -641,7 +641,12 @@ navButtons[2].addEventListener("click", function () {
 if (document.body.offsetWidth < 1400) {
     responsive_navbar.style.display = "none"
 }
-
+let choiseForPortfolioArr = false;
+let wholePortfolioArr;
+if (!choiseForPortfolioArr) {
+    wholePortfolioArr = portfoliosImages.children;
+    wholePortfolioArr = Array.prototype.slice.call(wholePortfolioArr)
+}
 let controlButtons = document.getElementById("controlButtons");
 controlButtons.children[0].addEventListener('click', function () {
     controlButtons.children[0].style.color = "#00A6EB";
@@ -650,25 +655,10 @@ controlButtons.children[0].addEventListener('click', function () {
             controlButtons.children[i].style.color = "black";
         }
     }
-    portfoliosImages.innerHTML = "";
-    for (let i = 0; i < cards.length - 1; i++) {
-        let card = document.createElement('div');
-        let cardBottom = document.createElement('div');
-        let cardButton1 = document.createElement('button');
-        let cardButton1Icon = document.createElement('i');
-        let cardButton2 = document.createElement('button');
-        let cardButton2Icon = document.createElement('i');
-        card.append(cardBottom);
-        card.className = "card";
-        cardBottom.className = "cardBottom";
-        cardBottom.append(cardButton1);
-        cardBottom.append(cardButton2);
-        cardButton1.append(cardButton1Icon);
-        cardButton2.append(cardButton2Icon);
-        cardButton1Icon.classList = "fa-solid fa-plus";
-        cardButton2Icon.classList = "fa-solid fa-link";
-        portfoliosImages.appendChild(card);
+    for (let i = 0; i < wholePortfolioArr.length; i++) {
+        portfoliosImages.append(wholePortfolioArr[i]);
     }
+    choiseForPortfolioArr = true;
 })
 controlButtons.children[1].addEventListener('click', function () {
     controlButtons.children[1].style.color = "#00A6EB";
@@ -683,6 +673,7 @@ controlButtons.children[1].addEventListener('click', function () {
             portfoliosImages.append(el);
         }
     })
+    choiseForPortfolioArr = true;
 })
 controlButtons.children[2].addEventListener('click', function () {
     controlButtons.children[2].style.color = "#00A6EB";
@@ -697,6 +688,7 @@ controlButtons.children[2].addEventListener('click', function () {
             portfoliosImages.append(el);
         }
     })
+    choiseForPortfolioArr = true;
 })
 controlButtons.children[3].addEventListener('click', function () {
     controlButtons.children[3].style.color = "#00A6EB";
@@ -711,4 +703,5 @@ controlButtons.children[3].addEventListener('click', function () {
             portfoliosImages.append(el);
         }
     })
+    choiseForPortfolioArr = true;
 })
