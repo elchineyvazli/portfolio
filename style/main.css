@@ -1,0 +1,1110 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+body .responsive_navbar {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #023B6D;
+  padding: 0 10px;
+}
+body .responsive_navbar #logo {
+  letter-spacing: 10px;
+}
+body .responsive_navbar .nav_button {
+  cursor: pointer;
+  color: #7191AD;
+}
+body .responsive_navbar .nav_button:first-of-type {
+  color: white;
+}
+body .website {
+  width: 100%;
+  background-image: url(../assets/bg.jpg);
+  display: flex;
+}
+body .website .left,
+body .website .right {
+  height: 96vh;
+}
+body .website .left {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  background-color: #040B14;
+  position: relative;
+  padding: 20px;
+}
+body .website .left .personal_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+body .website .left .personal_info #pp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  outline: 10px solid #2C2F3F;
+  background-image: url(../assets/pp.jpg);
+  background-size: 150%;
+  background-position: -15px 0px;
+  background-repeat: no-repeat;
+}
+body .website .left .personal_info #name {
+  font-size: 26px;
+  color: white;
+}
+body .website .left .personal_info #platform_buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+body .website .left .personal_info #platform_buttons .platform_button {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212431;
+  transition: 0.5s;
+}
+body .website .left .personal_info #platform_buttons .platform_button:hover {
+  background-color: #c19b29;
+  border-radius: 50%;
+}
+body .website .left #hMenu {
+  width: 70px;
+  height: 24px;
+  display: none;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  position: relative;
+}
+body .website .left #hMenu .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  transition: 0.5s;
+}
+body .website .left #hMenu .dot:nth-child(1) {
+  left: 8px;
+}
+body .website .left #hMenu .dot:nth-child(2) {
+  width: 28px;
+  border-radius: 3px;
+  left: 22px;
+}
+body .website .left #hMenu .dot:nth-child(3) {
+  left: 58px;
+}
+body .website .left .menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .website .left .menu_list {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 34px;
+  cursor: pointer;
+}
+body .website .left .menu_list span {
+  transition: 0.2s;
+}
+body .website .left .copyright {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+body .website .left .copyright p {
+  font-size: 14px;
+}
+body .website .right {
+  width: 82%;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+}
+body .website .right .rightContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  position: absolute;
+  scrollbar-width: none;
+}
+body .website .right .rightContainer .rightInside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .website .right .rightContainer .rightInside p,
+body .website .right .rightContainer .rightInside h1,
+body .website .right .rightContainer .rightInside h2,
+body .website .right .rightContainer .rightInside h3,
+body .website .right .rightContainer .rightInside h4,
+body .website .right .rightContainer .rightInside h5,
+body .website .right .rightContainer .rightInside h6,
+body .website .right .rightContainer .rightInside div {
+  color: black;
+}
+body .website .right .rightContainer .rightInside #myPhoto {
+  width: 100%;
+  height: 660px;
+  background-image: url(../assets/right_bg.jpg);
+  background-size: cover;
+  background-position: 0px -200px;
+  background-attachment: fixed;
+  font-size: 60px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+body .website .right .rightContainer .rightInside #myPhoto #whoIam {
+  font-size: 30px;
+  display: flex;
+  position: relative;
+  color: white;
+}
+body .website .right .rightContainer .rightInside #myPhoto #whoIam #typed {
+  position: relative;
+  font-size: 30px;
+  margin-left: 6px;
+}
+body .website .right .rightContainer .rightInside #myPhoto #whoIam #typed::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #00A6EB;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+body .website .right .rightContainer .rightInside #myPhoto #whoIam #cursor {
+  width: 4px;
+  height: 80%;
+  background-color: white;
+  position: absolute;
+  right: -10px;
+  top: 5px;
+}
+body .website .right .rightContainer .rightInside #about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 50px 0;
+}
+body .website .right .rightContainer .rightInside #aboutTop {
+  width: 100%;
+  padding: 15px 10px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+body .website .right .rightContainer .rightInside #aboutTop h1 {
+  font-size: 32px;
+  color: #173B6C;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .website .right .rightContainer .rightInside #aboutTop h1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00A6EB;
+}
+body .website .right .rightContainer .rightInside #aboutTop #aboutText {
+  font-size: 16px;
+  color: black;
+}
+body .website .right .rightContainer .rightInside #aboutBottom {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  gap: 20px;
+}
+body .website .right .rightContainer .rightInside #aboutBottom .aboutPicture {
+  width: 350px;
+  height: 400px;
+  background-image: url(../assets/pp.jpg);
+  background-size: cover;
+}
+body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #jobName {
+  color: #023B6D;
+  font-size: 35px;
+}
+body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutJob,
+body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #commonInfo {
+  color: black;
+  font-size: 16px;
+}
+body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself .info {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself .info h1 {
+  color: black;
+  margin-bottom: 3px;
+  font-size: 17px;
+}
+body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself .info p {
+  color: black;
+  margin-bottom: 3px;
+  font-size: 17px;
+}
+body .website .right .rightContainer .rightInside #facts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+body .website .right .rightContainer .rightInside #factsTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 15px 0 15px 20px;
+}
+body .website .right .rightContainer .rightInside #factsTop h1 {
+  font-size: 32px;
+  color: #173B6C;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .website .right .rightContainer .rightInside #factsTop h1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00A6EB;
+}
+body .website .right .rightContainer .rightInside #factsTop p {
+  font-size: 16px;
+}
+body .website .right .rightContainer .rightInside #factsBottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+body .website .right .rightContainer .rightInside #factsBottom .container {
+  width: 23%;
+  height: 200px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+body .website .right .rightContainer .rightInside #factsBottom .container i {
+  margin-top: 50px;
+}
+body .website .right .rightContainer .rightInside #factsBottom .containerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 35px;
+}
+body .website .right .rightContainer .rightInside #factsBottom .containerRight h1 {
+  font-size: 50px;
+}
+body .website .right .rightContainer .rightInside #factsBottom .containerRight .aboutContainer h5 {
+  font-size: 14px;
+  display: inline;
+}
+body .website .right .rightContainer .rightInside #factsBottom .containerRight .aboutContainer span {
+  font-size: 14px;
+  color: black;
+}
+body .website .right .rightContainer .rightInside #skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F8FD;
+}
+body .website .right .rightContainer .rightInside #skillsTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 45px 0 45px 20px;
+}
+body .website .right .rightContainer .rightInside #skillsTop h1 {
+  font-size: 32px;
+  color: #173B6C;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .website .right .rightContainer .rightInside #skillsTop h1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00A6EB;
+}
+body .website .right .rightContainer .rightInside #skillsTop p {
+  font-size: 16px;
+}
+body .website .right .rightContainer .rightInside #skillsBottom {
+  width: 100%;
+  display: flex;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container .top {
+  width: 100%;
+  display: flex;
+  padding: 5px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container .top h4 {
+  font-size: 12px;
+  font-weight: 700;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container .levelContainer {
+  width: 100%;
+  height: 9px;
+  background-color: #DCE8F8;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container .levelContainer .level {
+  height: 100%;
+  background-color: #00A6EB;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container .levelContainer .htmllevel {
+  width: 100%;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container .levelContainer .csslevel {
+  width: 90%;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container .levelContainer .jslevel {
+  width: 80%;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container .levelContainer .reactlevel {
+  width: 70%;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container .levelContainer .tslevel {
+  width: 20%;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .container .levelContainer .mysqllevel {
+  width: 30%;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .leftLanguages {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+body .website .right .rightContainer .rightInside #skillsBottom .rightLanguages {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+body .website .right .rightContainer .rightInside #resume {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 0 0 50px 0;
+}
+body .website .right .rightContainer .rightInside #resumeTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 45px 0 45px 20px;
+}
+body .website .right .rightContainer .rightInside #resumeTop h1 {
+  font-size: 32px;
+  color: #173B6C;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .website .right .rightContainer .rightInside #resumeTop h1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00A6EB;
+}
+body .website .right .rightContainer .rightInside #resumeTop p {
+  font-size: 16px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom h1,
+body .website .right .rightContainer .rightInside #resumeBottom h2,
+body .website .right .rightContainer .rightInside #resumeBottom h3,
+body .website .right .rightContainer .rightInside #resumeBottom h4,
+body .website .right .rightContainer .rightInside #resumeBottom h5,
+body .website .right .rightContainer .rightInside #resumeBottom h6,
+body .website .right .rightContainer .rightInside #resumeBottom p,
+body .website .right .rightContainer .rightInside #resumeBottom i,
+body .website .right .rightContainer .rightInside #resumeBottom li,
+body .website .right .rightContainer .rightInside #resumeBottom div {
+  color: black;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .line {
+  width: 2px;
+  height: 100%;
+  background-color: #1F5297;
+  position: relative;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .line #openingCircle {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border: solid 2px #1F5297;
+  border-radius: 50%;
+  top: 0px;
+  left: -6px;
+  cursor: pointer;
+  background-color: white;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .total_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .total_container h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: -6px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .total_container .container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 18px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .total_container .container .containerInfo {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .total_container .container .containerInfo .year {
+  width: 100px;
+  padding: 5px 0;
+  background-color: #E4EDF9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .total_container .container .containerInfo h2 {
+  font-size: 17px;
+  margin-top: -5px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .total_container .container .containerInfo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .total_container .container .containerInfo ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .containerInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #left .container {
+  width: 90%;
+  flex-direction: column;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #right h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: -6px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #right .line {
+  width: 2px;
+  height: 100%;
+  background-color: #1F5297;
+  position: relative;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #right .line #openingCircle {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border: solid 2px #1F5297;
+  border-radius: 50%;
+  top: 0px;
+  left: -6px;
+  cursor: pointer;
+  background-color: white;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #right .container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #right .container .containerInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #right .container .containerInfo .year {
+  width: 100px;
+  padding: 5px 0;
+  background-color: #E4EDF9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #right .container .containerInfo h2 {
+  font-size: 17px;
+  margin-top: -5px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #right .container .containerInfo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body .website .right .rightContainer .rightInside #resumeBottom #right .container .containerInfo ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+body .website .right .rightContainer .rightInside #portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f8fd;
+  padding: 0 0 100px 0;
+}
+body .website .right .rightContainer .rightInside #portfolioTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 45px 0 45px 20px;
+}
+body .website .right .rightContainer .rightInside #portfolioTop h1 {
+  font-size: 32px;
+  color: #173B6C;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .website .right .rightContainer .rightInside #portfolioTop h1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00A6EB;
+}
+body .website .right .rightContainer .rightInside #portfolioTop p {
+  font-size: 16px;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #controlButtons {
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #controlButtons button {
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  padding: 0 20px;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #controlButtons button:first-child {
+  color: #00A6EB;
+  border-radius: 20px 0 0 20px;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #controlButtons button:last-child {
+  border-radius: 0 20px 20px 0;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .card {
+  width: 30%;
+  height: 300px;
+  background-size: cover;
+  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .cardBottom {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: -40px;
+  transition: 0.5s;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .cardBottom button {
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #00A6EB;
+  border: solid 1px #32c2ff;
+  transition: 0.4s;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .cardBottom button:hover {
+  background-color: #1cb3f4;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .card:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .card:hover .cardBottom {
+  bottom: 0;
+}
+body .website .right .rightContainer .rightInside #services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-bottom: 100px;
+}
+body .website .right .rightContainer .rightInside #servicesTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 45px 10px 45px 20px;
+}
+body .website .right .rightContainer .rightInside #servicesTop h1 {
+  font-size: 32px;
+  color: #173B6C;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .website .right .rightContainer .rightInside #servicesTop h1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00A6EB;
+}
+body .website .right .rightContainer .rightInside #servicesTop p {
+  font-size: 16px;
+}
+body .website .right .rightContainer .rightInside #servicesBottom {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .website .right .rightContainer .rightInside #servicesBottom .container {
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+}
+body .website .right .rightContainer .rightInside #servicesBottom .container .circle {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #149DDD;
+  border-radius: 50%;
+  margin: 35px 0 0 10px;
+}
+body .website .right .rightContainer .rightInside #servicesBottom .container .textArea {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0 30px 0;
+  gap: 15px;
+}
+body .website .right .rightContainer .rightInside #servicesBottom .container .textArea h2 {
+  font-size: 20px;
+}
+body .website .right .rightContainer .rightInside #servicesBottom .container .textArea p {
+  font-size: 15px;
+}
+body .website .right .rightContainer .rightInside #testimonials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f8fd;
+  padding-bottom: 100px;
+}
+body .website .right .rightContainer .rightInside #testimonialsTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 45px 0 45px 20px;
+}
+body .website .right .rightContainer .rightInside #testimonialsTop h1 {
+  font-size: 32px;
+  color: #173B6C;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .website .right .rightContainer .rightInside #testimonialsTop h1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00A6EB;
+}
+body .website .right .rightContainer .rightInside #testimonialsTop p {
+  font-size: 16px;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom {
+  width: 1220px;
+  display: flex;
+  overflow: hidden;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider {
+  width: 100%;
+  display: flex;
+  transition: 0.5s;
+  gap: 10px;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCard {
+  min-width: 400px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  background-color: #023B6D;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCard:nth-child(1) .image {
+  background-image: url(../assets/quotesImages/marcus_aurelius.jpg);
+  background-size: 80%;
+  background-position: 10px -10px;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCard:nth-child(2) .image {
+  background-image: url(../assets/quotesImages/seneca_theyounger.png);
+  background-size: 90%;
+  background-position: 5px 0px;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCard:nth-child(3) .image {
+  background-image: url(../assets/quotesImages/epictetus.png);
+  background-size: 90%;
+  background-position: 5px 0px;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCard:nth-child(4) .image {
+  background-image: url(../assets/quotesImages/jim_rohn.jpg);
+  background-size: 90%;
+  background-position: 5px 0px;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCard:nth-child(5) .image {
+  background-image: url(../assets/quotesImages/marcus_tullius_cicero.jpg);
+  background-size: 90%;
+  background-position: 5px 0px;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCard .quotes {
+  width: 360px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 20px;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCard .quotes p {
+  font-size: 20px;
+  color: black;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCard .quotes::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 91%;
+  left: 45%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: white;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCardInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCardInfo .image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCardInfo p {
+  font-size: 15px;
+  color: rgb(220, 219, 219);
+}
+body .website .right .rightContainer .rightInside #testimonialsBottom #slider .sliderCardInfo h3 {
+  color: white;
+}
+body .website .right .rightContainer .rightInside #contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 60px 30px 60px 0;
+}
+body .website .right .rightContainer .rightInside #contactTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 45px 0 45px 20px;
+}
+body .website .right .rightContainer .rightInside #contactTop h1 {
+  font-size: 32px;
+  color: #173B6C;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .website .right .rightContainer .rightInside #contactTop h1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00A6EB;
+}
+body .website .right .rightContainer .rightInside #contactTop p {
+  font-size: 16px;
+}
+body .website .right .rightContainer .rightInside #contactBottom {
+  width: 100%;
+  display: flex;
+}
+body .website .right .rightContainer .rightInside #contactBottom #contactInfo {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+body .website .right .rightContainer .rightInside #contactBottom #contactInfo .allInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .website .right .rightContainer .rightInside #contactBottom #contactInfo .info {
+  width: 100%;
+  display: flex;
+}
+body .website .right .rightContainer .rightInside #contactBottom #contactInfo .mapouter {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+body .website .right .rightContainer .rightInside #contactBottom input {
+  height: 50px;
+  outline: solid 1px lightgray;
+  border: none;
+  color: black;
+  padding: 0 15px;
+}
+body .website .right .rightContainer .rightInside #contactBottom textarea {
+  color: black;
+  padding: 15px;
+}
+body .website .right .rightContainer .rightInside #contactBottom form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+}
+body .website .right .rightContainer .rightInside #contactBottom form .textInput1 {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+body .website .right .rightContainer .rightInside #contactBottom form .textInput2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+body .website .right .rightContainer .rightInside #contactBottom form .typeInput {
+  outline: solid 1px lightgray;
+  border: none;
+}
+body .website .right .rightContainer .rightInside #contactBottom form #sendMessage {
+  width: 120px;
+  height: 50px;
+  background-color: #00A6EB;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+body .website .right .rightContainer .rightInside #contactBottom form #sendMessage::before {
+  content: "Send Message";
+  width: 120px;
+  height: 50px;
+  background-color: green;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -50px;
+  transition: 0.5s;
+}
+body .website .right .rightContainer .rightInside #contactBottom form #sendMessage:hover::before {
+  bottom: 0;
+}/*# sourceMappingURL=main.css.map */

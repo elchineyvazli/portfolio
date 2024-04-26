@@ -1,0 +1,1368 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    // border: solid 1px red;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+    margin: 0 auto;
+
+    .responsive_navbar {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: #023B6D;
+        padding: 0 10px;
+
+        #logo {
+            letter-spacing: 10px;
+        }
+
+        .nav_button {
+            cursor: pointer;
+            color: #7191AD;
+        }
+
+        .nav_button:first-of-type {
+            color: white;
+        }
+    }
+
+    //!
+
+    .website {
+        width: 100%;
+        background-image: url(../assets/bg.jpg);
+        display: flex;
+        // border: solid 2px black;
+
+        .left,
+        .right {
+            height: 96vh;
+        }
+
+        .left {
+            width: 18%;
+            display: flex;
+            flex-direction: column;
+            background-color: #040B14;
+            position: relative;
+            padding: 20px;
+            // border: solid 2px red;
+
+            .personal_info {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                // padding: 20px;
+                // border: solid 1px white;
+
+                #pp {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    outline: 10px solid #2C2F3F;
+                    background-image: url(../assets/pp.jpg);
+                    background-size: 150%;
+                    background-position: -15px 0px;
+                    background-repeat: no-repeat;
+                }
+
+                #name {
+                    font-size: 26px;
+                    color: white;
+                }
+
+                #platform_buttons {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    .platform_button {
+                        width: 34px;
+                        height: 34px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #212431;
+                        transition: .5s;
+
+                        &:hover {
+                            background-color: #c19b29;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+
+            #hMenu {
+                width: 70px;
+                height: 24px;
+                display: none;
+                column-gap: 15px;
+                // background-color: #023B6D;
+                position: relative;
+
+                .dot {
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background-color: white;
+                    position: absolute;
+                    transition: .5s;
+
+                    &:nth-child(1) {
+                        left: 8px;
+                    }
+
+                    &:nth-child(2) {
+                        width: 28px;
+                        border-radius: 3px;
+                        left: 22px;
+                    }
+
+                    &:nth-child(3) {
+                        left: 58px;
+                    }
+                }
+            }
+
+            .menu {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                &_list {
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    padding-left: 34px;
+                    cursor: pointer;
+
+                    span {
+                        transition: .2s;
+                    }
+
+                    // border: solid 2px white;
+                }
+            }
+
+            .copyright {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        //!
+
+        .right {
+            width: 82%;
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+            // background-color: yellowgreen;
+
+            .rightContainer {
+                width: 100%;
+                height: 100vh;
+                overflow: scroll;
+                position: absolute;
+                scrollbar-width: none;
+                // top: 400px;
+                // right: -20px;
+
+                .rightInside {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    // overflow: hidden;
+
+                    p,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    div {
+                        color: black;
+                    }
+
+                    #myPhoto {
+                        width: 100%;
+                        height: 660px;
+                        background-image: url(../assets/right_bg.jpg);
+                        background-size: cover;
+                        background-position: 0px -200px;
+                        background-attachment: fixed;
+                        // position: absolute;
+                        font-size: 60px;
+                        font-weight: 700;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        color: white;
+                        // border: solid 2px black;
+                        // left: 0;
+                        // background-color: blueviolet;
+                        // display: none;
+
+                        #whoIam {
+                            font-size: 30px;
+                            display: flex;
+                            position: relative;
+                            color: white;
+
+                            #typed {
+                                position: relative;
+                                font-size: 30px;
+                                margin-left: 6px;
+
+                                &::after {
+                                    content: "";
+                                    width: 100%;
+                                    height: 3px;
+                                    background-color: #00A6EB;
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                }
+                            }
+
+                            #cursor {
+                                width: 4px;
+                                height: 80%;
+                                background-color: white;
+                                position: absolute;
+                                right: -10px;
+                                top: 5px;
+                            }
+                        }
+
+                        // &::after {
+                        //     content: "";
+                        //     position: absolute;
+                        //     top: 0;
+                        //     left: 0;
+                        //     z-index: 2px;
+                        //     width: 100%;
+                        //     height: 100%;
+                        //     background-color: rgba(black, .5);
+                        // }
+                    }
+
+                    //!
+
+                    #about {
+                        width: 100%;
+                        // height: 100vh;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        background-color: white;
+                        padding: 50px 0;
+                        // border: solid 2px black;
+                        // background-color: blueviolet;
+                        // display: none;
+
+                        &Top {
+                            width: 100%;
+                            padding: 15px 10px 15px 20px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+
+                            h1 {
+                                font-size: 32px;
+                                color: #173B6C;
+                                position: relative;
+                                width: fit-content;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -20px;
+                                    left: 0;
+                                    width: 60%;
+                                    height: 4px;
+                                    border-radius: 2px;
+                                    background-color: #00A6EB;
+                                }
+                            }
+
+                            #aboutText {
+                                font-size: 16px;
+                                color: black;
+                            }
+                        }
+
+                        &Bottom {
+                            width: 100%;
+                            display: flex;
+                            padding: 0 20px;
+                            gap: 20px;
+                            // background-color: #023B6D;
+
+                            .aboutPicture {
+                                width: 350px;
+                                height: 400px;
+                                background-image: url(../assets/pp.jpg);
+                                background-size: cover;
+                            }
+
+                            .aboutInfo {
+                                width: 800px;
+                                height: 400px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                // border: solid 1px black;
+
+                                #jobName {
+                                    color: #023B6D;
+                                    font-size: 35px;
+                                }
+
+                                #aboutJob,
+                                #commonInfo {
+                                    color: black;
+                                    font-size: 16px;
+                                }
+
+                                #aboutmyself {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    row-gap: 20px;
+
+                                    .info {
+                                        width: 45%;
+                                        display: flex;
+                                        align-items: center;
+                                        column-gap: 15px;
+
+                                        h1 {
+                                            color: black;
+                                            margin-bottom: 3px;
+                                            font-size: 17px;
+                                        }
+
+                                        p {
+                                            color: black;
+                                            margin-bottom: 3px;
+                                            font-size: 17px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //!
+
+                    #facts {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white;
+                        // display: none;
+
+                        &Top {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            padding: 15px 0 15px 20px;
+
+                            h1 {
+                                font-size: 32px;
+                                color: #173B6C;
+                                position: relative;
+                                width: fit-content;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -20px;
+                                    left: 0;
+                                    width: 60%;
+                                    height: 4px;
+                                    border-radius: 2px;
+                                    background-color: #00A6EB;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &Bottom {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+                            .container {
+                                width: 23%;
+                                height: 200px;
+                                display: flex;
+                                gap: 10px;
+                                padding: 10px;
+                                // border: solid 1px black;
+
+                                i {
+                                    margin-top: 50px;
+                                }
+
+                                &Right {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 5px;
+                                    margin-top: 35px;
+
+                                    h1 {
+                                        font-size: 50px;
+                                    }
+
+                                    .aboutContainer {
+
+                                        h5 {
+                                            font-size: 14px;
+                                            display: inline;
+                                        }
+
+                                        span {
+                                            font-size: 14px;
+                                            color: black;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //!
+
+                    #skills {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #F5F8FD;
+                        // position: relative;
+                        // left: -10px;
+                        // border: solid 1px black;
+                        // display: none;
+
+                        &Top {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            padding: 45px 0 45px 20px;
+
+                            h1 {
+                                font-size: 32px;
+                                color: #173B6C;
+                                position: relative;
+                                width: fit-content;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -20px;
+                                    left: 0;
+                                    width: 60%;
+                                    height: 4px;
+                                    border-radius: 2px;
+                                    background-color: #00A6EB;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &Bottom {
+                            width: 100%;
+                            display: flex;
+
+                            .container {
+                                width: 100%;
+                                height: 70px;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 0px 20px;
+                                // border: solid 1px black;
+
+                                .top {
+                                    width: 100%;
+                                    display: flex;
+                                    padding: 5px 0px;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    h4 {
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                    }
+                                }
+
+                                .levelContainer {
+                                    width: 100%;
+                                    height: 9px;
+                                    background-color: #DCE8F8;
+
+                                    .level {
+                                        height: 100%;
+                                        background-color: #00A6EB;
+                                    }
+
+                                    .htmllevel {
+                                        width: 100%;
+                                    }
+
+                                    .csslevel {
+                                        width: 90%;
+                                    }
+
+                                    .jslevel {
+                                        width: 80%;
+                                    }
+
+                                    .reactlevel {
+                                        width: 70%;
+                                    }
+
+                                    .tslevel {
+                                        width: 20%;
+                                    }
+
+                                    .mysqllevel {
+                                        width: 30%;
+                                    }
+                                }
+                            }
+
+                            .leftLanguages {
+                                width: 50%;
+                                height: 300px;
+                                display: flex;
+                                flex-direction: column;
+                            }
+
+                            .rightLanguages {
+                                width: 50%;
+                                height: 300px;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+
+                    //!
+
+                    #resume {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white;
+                        padding: 0 0 50px 0;
+                        // position: relative;
+                        // left: -10px;
+                        // display: none;
+
+                        &Top {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            padding: 45px 0 45px 20px;
+
+                            h1 {
+                                font-size: 32px;
+                                color: #173B6C;
+                                position: relative;
+                                width: fit-content;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -20px;
+                                    left: 0;
+                                    width: 60%;
+                                    height: 4px;
+                                    border-radius: 2px;
+                                    background-color: #00A6EB;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &Bottom {
+                            width: 100%;
+                            display: flex;
+                            padding: 20px;
+
+                            h1,
+                            h2,
+                            h3,
+                            h4,
+                            h5,
+                            h6,
+                            p,
+                            i,
+                            li,
+                            div {
+                                color: black;
+                            }
+
+                            #left {
+                                width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 30px;
+
+                                .line {
+                                    width: 2px;
+                                    height: 100%;
+                                    background-color: #1F5297;
+                                    position: relative;
+
+                                    #openingCircle {
+                                        width: 14px;
+                                        height: 14px;
+                                        position: absolute;
+                                        border: solid 2px #1F5297;
+                                        border-radius: 50%;
+                                        top: 0px;
+                                        left: -6px;
+                                        cursor: pointer;
+                                        background-color: white;
+                                    }
+                                }
+
+                                .total_container {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 20px;
+
+                                    h1 {
+                                        font-size: 26px;
+                                        font-weight: 600;
+                                        margin-left: -6px;
+                                    }
+
+                                    .container {
+                                        width: 90%;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                        gap: 18px;
+
+                                        .containerInfo {
+                                            width: 100%;
+                                            display: flex;
+                                            gap: 10px;
+
+                                            .year {
+                                                width: 100px;
+                                                padding: 5px 0;
+                                                background-color: #E4EDF9;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                font-size: 15px;
+                                                font-weight: 600;
+                                                font-family: "Raleway", sans-serif;
+                                            }
+
+                                            h2 {
+                                                font-size: 17px;
+                                                margin-top: -5px;
+                                            }
+
+                                            ul {
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 5px;
+
+                                                li {
+                                                    list-style-type: disc;
+                                                    margin-left: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                                .containerInfo {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+
+                                .container {
+                                    width: 90%;
+                                    flex-direction: column;
+                                }
+                            }
+
+                            #right {
+                                width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+
+                                h1 {
+                                    font-size: 26px;
+                                    font-weight: 600;
+                                    margin-left: -6px;
+                                }
+
+                                .line {
+                                    width: 2px;
+                                    height: 100%;
+                                    background-color: #1F5297;
+                                    position: relative;
+
+                                    #openingCircle {
+                                        width: 14px;
+                                        height: 14px;
+                                        position: absolute;
+                                        border: solid 2px #1F5297;
+                                        border-radius: 50%;
+                                        top: 0px;
+                                        left: -6px;
+                                        cursor: pointer;
+                                        background-color: white;
+                                    }
+                                }
+
+                                .container {
+                                    width: 90%;
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 18px;
+
+                                    .containerInfo {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 10px;
+
+                                        .year {
+                                            width: 100px;
+                                            padding: 5px 0;
+                                            background-color: #E4EDF9;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            font-size: 15px;
+                                            font-weight: 600;
+                                            font-family: "Raleway", sans-serif;
+                                        }
+
+                                        h2 {
+                                            font-size: 17px;
+                                            margin-top: -5px;
+                                        }
+
+                                        ul {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 5px;
+
+                                            li {
+                                                list-style-type: disc;
+                                                margin-left: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //!
+
+                    #portfolio {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #f5f8fd;
+                        padding: 0 0 100px 0;
+                        // position: relative;
+                        // left: -10px;
+                        // display: none;
+
+                        &Top {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            padding: 45px 0 45px 20px;
+
+                            h1 {
+                                font-size: 32px;
+                                color: #173B6C;
+                                position: relative;
+                                width: fit-content;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -20px;
+                                    left: 0;
+                                    width: 60%;
+                                    height: 4px;
+                                    border-radius: 2px;
+                                    background-color: #00A6EB;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &Bottom {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 20px;
+
+                            #controlButtons {
+                                display: flex;
+                                border-radius: 20px;
+                                background-color: white;
+                                // border: solid 1px black;
+
+                                button {
+                                    // width: 75px;
+                                    height: 40px;
+                                    background-color: transparent;
+                                    cursor: pointer;
+                                    border: none;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    color: black;
+                                    padding: 0 20px;
+                                    // border: solid 1px black;
+                                }
+
+                                button:first-child {
+                                    color: #00A6EB;
+                                    border-radius: 20px 0 0 20px;
+                                }
+
+                                button:last-child {
+                                    border-radius: 0 20px 20px 0;
+                                }
+                            }
+
+                            #portfoliosImages {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                gap: 20px;
+
+                                .card {
+                                    width: 30%;
+                                    height: 300px;
+                                    background-size: cover;
+                                    transition: .5s;
+                                    overflow: hidden;
+                                    position: relative;
+                                    background-size: cover;
+                                    // border: solid 1px black;
+
+                                    &Bottom {
+                                        width: 100%;
+                                        display: flex;
+                                        position: absolute;
+                                        bottom: -40px;
+                                        transition: .5s;
+
+                                        button {
+                                            width: 50%;
+                                            height: 40px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            cursor: pointer;
+                                            background-color: #00A6EB;
+                                            border: solid 1px #32c2ff;
+                                            transition: .4s;
+
+                                            &:hover {
+                                                background-color: #1cb3f4;
+                                            }
+                                        }
+
+                                    }
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        transition: .5s
+                                    }
+
+                                    &:hover::before {
+                                        background-color: rgba(black, .5);
+                                    }
+
+                                    &:hover .cardBottom {
+                                        bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //!
+
+                    #services {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white;
+                        padding-bottom: 100px;
+                        // position: relative;
+                        // left: -10px;
+                        // display: none;
+
+                        &Top {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            padding: 45px 10px 45px 20px;
+
+                            h1 {
+                                font-size: 32px;
+                                color: #173B6C;
+                                position: relative;
+                                width: fit-content;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -20px;
+                                    left: 0;
+                                    width: 60%;
+                                    height: 4px;
+                                    border-radius: 2px;
+                                    background-color: #00A6EB;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &Bottom {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            .container {
+                                width: 33%;
+                                display: flex;
+                                justify-content: space-between;
+                                // border: solid 1px black;
+
+                                .circle {
+                                    width: 54px;
+                                    height: 54px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background-color: #149DDD;
+                                    border-radius: 50%;
+                                    margin: 35px 0 0 10px;
+                                }
+
+                                .textArea {
+                                    width: 75%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    padding: 10px 0 30px 0;
+                                    gap: 15px;
+
+                                    h2 {
+                                        font-size: 20px;
+                                    }
+
+                                    p {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //!
+
+                    #testimonials {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: #f5f8fd;
+                        padding-bottom: 100px;
+                        // position: relative;
+                        // left: -10px;
+                        // display: none;
+
+                        &Top {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            padding: 45px 0 45px 20px;
+
+                            h1 {
+                                font-size: 32px;
+                                color: #173B6C;
+                                position: relative;
+                                width: fit-content;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -20px;
+                                    left: 0;
+                                    width: 60%;
+                                    height: 4px;
+                                    border-radius: 2px;
+                                    background-color: #00A6EB;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &Bottom {
+                            width: 1220px;
+                            display: flex;
+                            overflow: hidden;
+
+                            #slider {
+                                width: 100%;
+                                display: flex;
+                                transition: .5s;
+                                gap: 10px;
+
+                                .sliderCard {
+                                    min-width: 400px;
+                                    height: 470px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 40px;
+                                    padding: 20px;
+                                    background-color: #023B6D;
+                                    // border: solid 1px black;
+
+                                    &:nth-child(1) .image {
+                                        background-image: url(../assets/quotesImages/marcus_aurelius.jpg);
+                                        background-size: 80%;
+                                        background-position: 10px -10px;
+                                    }
+
+                                    &:nth-child(2) .image {
+                                        background-image: url(../assets/quotesImages/seneca_theyounger.png);
+                                        background-size: 90%;
+                                        background-position: 5px 0px;
+                                        // background-repeat: no-repeat;
+                                    }
+
+                                    &:nth-child(3) .image {
+                                        background-image: url(../assets/quotesImages/epictetus.png);
+                                        background-size: 90%;
+                                        background-position: 5px 0px;
+                                        // background-repeat: no-repeat;
+                                    }
+
+                                    &:nth-child(4) .image {
+                                        background-image: url(../assets/quotesImages/jim_rohn.jpg);
+                                        background-size: 90%;
+                                        background-position: 5px 0px;
+                                        // background-repeat: no-repeat;
+                                    }
+
+                                    &:nth-child(5) .image {
+                                        background-image: url(../assets/quotesImages/marcus_tullius_cicero.jpg);
+                                        background-size: 90%;
+                                        background-position: 5px 0px;
+                                        // background-repeat: no-repeat;
+                                    }
+
+                                    .quotes {
+                                        width: 360px;
+                                        height: 240px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                                        padding: 20px;
+                                        position: relative;
+                                        background-color: white;
+                                        z-index: 1;
+
+                                        p {
+                                            font-size: 20px;
+                                            color: black;
+                                        }
+
+                                        &::before {
+                                            content: "";
+                                            width: 40px;
+                                            height: 40px;
+                                            transform: rotate(45deg);
+                                            position: absolute;
+                                            top: 91%;
+                                            left: 45%;
+                                            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                                            background-color: white;
+                                        }
+                                    }
+
+                                    &Info {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 5px;
+                                        align-items: center;
+
+
+                                        .image {
+                                            width: 80px;
+                                            height: 80px;
+                                            border-radius: 50%;
+                                        }
+
+                                        p {
+                                            font-size: 15px;
+                                            color: rgb(220, 219, 219);
+                                        }
+
+                                        h3 {
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //!
+
+                    #contact {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: white;
+                        padding: 60px 30px 60px 0;
+                        // position: relative;
+                        // left: -10px;
+                        // display: none;
+
+                        &Top {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            padding: 45px 0 45px 20px;
+
+                            h1 {
+                                font-size: 32px;
+                                color: #173B6C;
+                                position: relative;
+                                width: fit-content;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -20px;
+                                    left: 0;
+                                    width: 60%;
+                                    height: 4px;
+                                    border-radius: 2px;
+                                    background-color: #00A6EB;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &Bottom {
+                            width: 100%;
+                            display: flex;
+
+                            #contactInfo {
+                                width: 50%;
+                                height: 500px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+                                padding: 20px;
+
+                                .allInfos {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 20px;
+                                }
+
+                                .info {
+                                    width: 100%;
+                                    display: flex;
+                                }
+
+                                .mapouter {
+                                    position: relative;
+                                    height: 300px;
+                                    width: 300px;
+                                }
+                            }
+
+                            input {
+                                height: 50px;
+                                outline: solid 1px lightgray;
+                                border: none;
+                                color: black;
+                                padding: 0 15px;
+                            }
+
+                            textarea {
+                                color: black;
+                                padding: 15px;
+                            }
+
+                            form {
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                row-gap: 20px;
+                                column-gap: 28px;
+
+                                .textInput1 {
+                                    width: 48%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 6px;
+                                }
+
+                                .textInput2 {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 6px;
+                                }
+
+                                .typeInput {
+                                    outline: solid 1px lightgray;
+                                    border: none;
+                                }
+
+                                #sendMessage {
+                                    width: 120px;
+                                    height: 50px;
+                                    background-color: #00A6EB;
+                                    border-radius: 4px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 14px;
+                                    border: none;
+                                    cursor: pointer;
+                                    position: relative;
+                                    overflow: hidden;
+
+                                    &::before {
+                                        content: "Send Message";
+                                        width: 120px;
+                                        height: 50px;
+                                        background-color: green;
+                                        border-radius: 4px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        position: absolute;
+                                        bottom: -50px;
+                                        transition: .5s;
+                                    }
+
+                                    &:hover::before {
+                                        bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //!
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,578 @@
+@media screen and (max-width: 1499px) {
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom {
+    width: 1020px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard {
+    min-width: 333px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard .quotes {
+    width: 299px;
+  }
+}
+@media screen and (max-width: 1273px) {
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom {
+    width: 910px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard {
+    min-width: 450px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard .quotes {
+    width: 410px;
+  }
+}
+@media screen and (max-width: 1245px) {
+  body .website {
+    flex-direction: column;
+  }
+  body .website .right {
+    width: 100%;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom {
+    width: 1110px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard {
+    min-width: 550px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard .quotes {
+    width: 510px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom {
+    width: 1000px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard {
+    min-width: 500px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard .quotes {
+    width: 460px;
+  }
+}
+@media screen and (max-width: 1045px) {
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom {
+    width: 800px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard {
+    min-width: 400px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard .quotes {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 860px) {
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom {
+    width: 600px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard {
+    min-width: 300px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard .quotes {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 650px) {
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsTop {
+    padding: 10px 0;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsTop h1::after {
+    display: none;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsTop p {
+    text-align: center;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom {
+    width: 400px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard {
+    min-width: 400px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard .quotes {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 445px) {
+  body .website .right .rightContainer {
+    right: 0;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom {
+    width: 320px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard {
+    min-width: 320px;
+  }
+  body .website .right .rightContainer .rightInside #testimonials #testimonialsBottom #slider .sliderCard .quotes {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 1245px) {
+  body .website .left {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: row;
+    padding: 0 20px;
+  }
+  body .website .left .personal_info {
+    flex-direction: row;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+  }
+  body .website .left .personal_info #pp {
+    display: none;
+  }
+  body .website .left .menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  body .website .left .menu_list {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+  }
+  body .website .left .copyright {
+    display: none;
+  }
+}
+@media screen and (max-width: 1152px) {
+  body .responsive_navbar {
+    padding: 0 80px;
+  }
+  body .website .left {
+    padding: 0 80px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .website .left .personal_info {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body .website .left .personal_info #name {
+    font-size: 22px;
+  }
+  body .website .left #hMenu {
+    display: flex;
+  }
+  body .website .left .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 878px) {
+  body .website .left .personal_info #name {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 580px) {
+  body .responsive_navbar {
+    padding: 20px;
+    justify-content: center;
+  }
+  body .website .left .personal_info #name {
+    display: none;
+  }
+}
+@media screen and (max-width: 440px) {
+  body .website .left {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 1340px) {
+  body .website .right .rightContainer .rightInside #contactBottom {
+    gap: 30px;
+  }
+  body .website .right .rightContainer .rightInside #contactBottom #contactInfo .allInfos {
+    gap: 60px;
+  }
+  body .website .right .rightContainer .rightInside #contactBottom form .yourName,
+  body .website .right .rightContainer .rightInside #contactBottom form .yourEmail {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 710px) {
+  body .website .right .rightContainer .rightInside #contactBottom {
+    flex-direction: column;
+  }
+  body .website .right .rightContainer .rightInside #contactBottom #contactInfo {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+  }
+  body .website .right .rightContainer .rightInside #contactBottom form {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 636px) {
+  body .website .right .rightContainer .rightInside #contactBottom #contactInfo {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #contactBottom #contactInfo .allInfos {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body .website .right .rightContainer .rightInside #contactBottom form {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 418px) {
+  body .website .right .rightContainer .rightInside #contactBottom #contactInfo .mapouter {
+    width: 100%;
+  }
+  body .website .right .rightContainer .rightInside #contactBottom form #sendMessage {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 363px) {
+  body .website .right .rightContainer .rightInside #contactTop {
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #contactTop h1::after {
+    display: none;
+  }
+  body .website .right .rightContainer .rightInside #contactTop p {
+    text-align: center;
+  }
+  body .website .right .rightContainer .rightInside #contactBottom #contactInfo {
+    padding: 0;
+  }
+  body .website .right .rightContainer .rightInside #contactBottom #contactInfo .allInfos {
+    gap: 10px;
+  }
+  body .website .right .rightContainer .rightInside #contactBottom #contactInfo .mapouter {
+    display: none;
+  }
+}
+@media screen and (max-width: 1080px) {
+  body .website .right .rightContainer .rightInside #myPhoto {
+    background-position: 0 -100px;
+  }
+}
+@media screen and (max-width: 945px) {
+  body .website .right .rightContainer .rightInside #myPhoto {
+    background-position: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  body .website .right .rightContainer .rightInside #myPhoto {
+    background-position: -50px 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .website .right .rightContainer .rightInside #myPhoto {
+    background-position: -250px 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  body .website .right .rightContainer .rightInside #myPhoto {
+    background-size: 330%;
+    background-position: -400px -100px;
+    background-repeat: no-repeat;
+    font-size: 40px;
+  }
+  body .website .right .rightContainer .rightInside #myPhoto #whoIam {
+    font-size: 40px;
+  }
+  body .website .right .rightContainer .rightInside #myPhoto #whoIam #typed {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutPicture {
+    width: 525px;
+    height: 600px;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo {
+    width: 625px;
+    height: auto;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself .info {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 786px) {
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutPicture {
+    background-position: -60px 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  body .website .right .rightContainer .rightInside #aboutBottom {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutPicture {
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo {
+    width: 100%;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 432px) {
+  body .website .right .rightContainer .rightInside #aboutTop {
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #aboutTop h1::after {
+    display: none;
+  }
+  body .website .right .rightContainer .rightInside #aboutTop #aboutText {
+    font-size: 15px;
+    text-align: center;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutPicture {
+    width: 100%;
+    height: 500px;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself .info h1 {
+    font-size: 15px;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself .info p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 368px) {
+  body .website .right .rightContainer .rightInside #aboutBottom {
+    padding: 10px;
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo {
+    width: 100%;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 338px) {
+  body .website .right .rightContainer .rightInside #aboutBottom {
+    padding: 2px;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #jobName {
+    font-size: 30px;
+    text-align: center;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutJob {
+    font-size: 14px;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself .info h1 {
+    font-size: 12px;
+  }
+  body .website .right .rightContainer .rightInside #aboutBottom .aboutInfo #aboutmyself .info p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 744px) {
+  body .website .right .rightContainer .rightInside #factsBottom {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  body .website .right .rightContainer .rightInside #factsBottom .container {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 505px) {
+  body .website .right .rightContainer .rightInside #factsTop {
+    padding: 10px 0;
+    align-items: center;
+    gap: 10px;
+  }
+  body .website .right .rightContainer .rightInside #factsTop h1::after {
+    display: none;
+  }
+  body .website .right .rightContainer .rightInside #factsTop p {
+    text-align: center;
+  }
+  body .website .right .rightContainer .rightInside #factsBottom {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  body .website .right .rightContainer .rightInside #factsBottom .container {
+    width: 40%;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    height: auto;
+  }
+  body .website .right .rightContainer .rightInside #factsBottom .containerRight {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #factsBottom .containerRight .aboutContainer {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 415px) {
+  body .website .right .rightContainer .rightInside #factsTop h1::after {
+    display: none;
+  }
+  body .website .right .rightContainer .rightInside #factsTop p {
+    text-align: center;
+  }
+  body .website .right .rightContainer .rightInside #factsBottom {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  body .website .right .rightContainer .rightInside #factsBottom .container {
+    width: 100%;
+    height: 140px;
+    padding: 5px;
+    flex-direction: row;
+  }
+  body .website .right .rightContainer .rightInside #factsBottom .container i {
+    margin-top: -10px;
+  }
+}
+@media screen and (max-width: 929px) {
+  body .website .right .rightContainer .rightInside #skillsBottom {
+    flex-direction: column;
+  }
+  body .website .right .rightContainer .rightInside #skillsBottom .leftLanguages,
+  body .website .right .rightContainer .rightInside #skillsBottom .rightLanguages {
+    height: auto;
+    width: 100%;
+    padding: 0 20px;
+  }
+  body .website .right .rightContainer .rightInside #skillsBottom .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  body .website .right .rightContainer .rightInside #skillsTop {
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #skillsTop h1::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 727px) {
+  body .website .right .rightContainer .rightInside #resumeBottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  body .website .right .rightContainer .rightInside #resumeBottom #left,
+  body .website .right .rightContainer .rightInside #resumeBottom #right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 531px) {
+  body .website .right .rightContainer .rightInside #resumeTop {
+    padding: 10px;
+  }
+  body .website .right .rightContainer .rightInside #resumeTop h1::after {
+    display: none;
+  }
+  body .website .right .rightContainer .rightInside #resumeTop p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1120px) {
+  body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .card {
+    width: 22%;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 810px) {
+  body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .card {
+    width: 48%;
+    height: 400px;
+    border: solid 1px lightblue;
+    background-position: -100px 0;
+  }
+}
+@media screen and (max-width: 627px) {
+  body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .card {
+    width: 48%;
+    height: 270px;
+    border: solid 1px lightblue;
+    background-position: 0;
+  }
+}
+@media screen and (max-width: 501px) {
+  body .website .right .rightContainer .rightInside #portfolio {
+    left: 0;
+    padding: 50px 10px;
+  }
+  body .website .right .rightContainer .rightInside #portfolioTop {
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #portfolioTop h1::after {
+    display: none;
+  }
+  body .website .right .rightContainer .rightInside #portfolioTop p {
+    text-align: center;
+  }
+  body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .card {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 377px) {
+  body .website .right .rightContainer .rightInside #portfolioBottom #controlButtons button {
+    padding: 0 10px;
+  }
+  body .website .right .rightContainer .rightInside #portfolioBottom #portfoliosImages .card {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 850px) {
+  body .website .right .rightContainer .rightInside #servicesBottom {
+    gap: 10px;
+  }
+  body .website .right .rightContainer .rightInside #servicesBottom .container {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 642px) {
+  body .website .right .rightContainer .rightInside #servicesBottom .container {
+    width: 48%;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0 0 0;
+  }
+  body .website .right .rightContainer .rightInside #servicesBottom .container .textArea {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 515px) {
+  body .website .right .rightContainer .rightInside #servicesTop {
+    gap: 10px;
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #servicesTop h1::after {
+    display: none;
+  }
+  body .website .right .rightContainer .rightInside #servicesTop p {
+    text-align: center;
+  }
+  body .website .right .rightContainer .rightInside #servicesBottom {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #servicesBottom .container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .website .right .rightContainer .rightInside #servicesBottom .container .textArea {
+    text-align: center;
+  }
+}/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,1376 @@
+//! TESTIMONIALS
+@media screen and (max-width:1499px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #testimonials {
+
+                            #testimonialsBottom {
+                                width: 1020px;
+
+                                #slider {
+
+                                    .sliderCard {
+                                        min-width: 333px;
+
+                                        .quotes {
+                                            width: 299px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1273px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #testimonials {
+
+                            #testimonialsBottom {
+                                width: 910px;
+
+                                #slider {
+
+                                    .sliderCard {
+                                        min-width: 450px;
+
+                                        .quotes {
+                                            width: 410px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1245px) {
+    body {
+        .website {
+            flex-direction: column;
+
+            .right {
+                width: 100%;
+
+                .rightContainer {
+                    .rightInside {
+                        #testimonials {
+
+                            #testimonialsBottom {
+                                width: 1110px;
+
+                                #slider {
+
+                                    .sliderCard {
+                                        min-width: 550px;
+
+                                        .quotes {
+                                            width: 510px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1160px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #testimonials {
+
+                            #testimonialsBottom {
+                                width: 1000px;
+
+                                #slider {
+
+                                    .sliderCard {
+                                        min-width: 500px;
+
+                                        .quotes {
+                                            width: 460px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1045px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #testimonials {
+
+                            #testimonialsBottom {
+                                width: 800px;
+
+                                #slider {
+
+                                    .sliderCard {
+                                        min-width: 400px;
+
+                                        .quotes {
+                                            width: 360px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:860px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #testimonials {
+
+                            #testimonialsBottom {
+                                width: 600px;
+
+                                #slider {
+
+                                    .sliderCard {
+                                        min-width: 300px;
+
+                                        .quotes {
+                                            width: 260px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #testimonials {
+
+                            #testimonialsTop {
+                                padding: 10px 0;
+                                gap: 10px;
+                                justify-content: center;
+                                align-items: center;
+
+                                h1 {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                                p {
+                                    text-align: center;
+                                }
+                            }
+
+                            #testimonialsBottom {
+                                width: 400px;
+
+                                #slider {
+
+                                    .sliderCard {
+                                        min-width: 400px;
+
+                                        .quotes {
+                                            width: 360px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:445px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    right: 0;
+
+                    .rightInside {
+                        #testimonials {
+                            #testimonialsBottom {
+                                width: 320px;
+
+                                #slider {
+
+                                    .sliderCard {
+                                        min-width: 320px;
+
+                                        .quotes {
+                                            width: 280px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! -- TESTIMONIALS
+
+//! LEFT & RESPONSIVE_NAVBAR
+
+@media screen and (max-width:1245px) {
+
+    body {
+        .website {
+            .left {
+                width: 100%;
+                height: fit-content;
+                flex-direction: row;
+                padding: 0 20px;
+
+                .personal_info {
+                    flex-direction: row;
+                    height: fit-content;
+                    padding: 0;
+
+                    #pp {
+                        display: none;
+                    }
+                }
+
+                .menu {
+                    flex-direction: row;
+                    justify-content: center;
+
+                    &_list {
+                        width: fit-content;
+                        height: fit-content;
+                        padding: 5px 10px;
+                    }
+                }
+
+                .copyright {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1152px) {
+    body {
+        .responsive_navbar {
+            padding: 0 80px;
+        }
+
+        .website {
+            .left {
+                padding: 0 80px;
+                justify-content: space-between;
+                align-items: center;
+
+                .personal_info {
+                    width: fit-content;
+
+                    #name {
+                        font-size: 22px;
+                    }
+                }
+
+                #hMenu {
+                    display: flex;
+                }
+
+                .menu {
+                    // width: fit-content;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:878px) {
+    body {
+        .website {
+            .left {
+                .personal_info {
+                    #name {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    body {
+        .responsive_navbar {
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .website {
+            .left {
+                .personal_info {
+                    #name {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    body {
+        .website {
+            .left {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+//! -- LEFT & RESPONSIVE_NAVBAR
+
+//! CONTACT
+
+@media screen and (max-width: 1340px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #contact {
+                            &Bottom {
+                                gap: 30px;
+
+                                #contactInfo {
+                                    .allInfos {
+                                        gap: 60px;
+                                    }
+                                }
+
+                                form {
+                                    .yourName,
+                                    .yourEmail {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 710px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #contact {
+                            &Bottom {
+                                flex-direction: column;
+
+                                #contactInfo {
+                                    width: 100%;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    height: auto;
+                                }
+
+                                form {
+                                    width: 100%;
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 636px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #contact {
+                            &Bottom {
+
+                                #contactInfo {
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: center;
+
+                                    .allInfos {
+                                        width: fit-content;
+                                    }
+                                }
+
+                                form {
+                                    width: 100%;
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 418px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #contact {
+                            &Bottom {
+
+                                #contactInfo {
+
+                                    .mapouter {
+                                        width: 100%;
+                                    }
+                                }
+
+                                form {
+                                    #sendMessage {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 363px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #contact {
+                            &Top {
+                                align-items: center;
+
+                                h1 {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                                p {
+                                    text-align: center;
+                                }
+                            }
+
+                            &Bottom {
+
+                                #contactInfo {
+                                    padding: 0;
+
+                                    .allInfos {
+                                        gap: 10px;
+                                    }
+
+                                    .mapouter {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! -- CONTACT
+
+//! MY PHOTO
+
+@media screen and (max-width:1080px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #myPhoto {
+                            background-position: 0 -100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:945px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #myPhoto {
+                            background-position: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #myPhoto {
+                            background-position: -50px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #myPhoto {
+                            background-position: -250px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #myPhoto {
+                            background-size: 330%;
+                            background-position: -400px -100px;
+                            background-repeat: no-repeat;
+                            font-size: 40px;
+
+                            #whoIam {
+                                font-size: 40px;
+
+                                #typed {
+                                    font-size: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! -- MY PHOTO
+
+//! ABOUT
+
+@media screen and (max-width:1050px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #about {
+                            &Bottom {
+
+                                .aboutPicture {
+                                    width: 525px;
+                                    height: 600px;
+                                }
+
+                                .aboutInfo {
+                                    width: 625px;
+                                    height: auto;
+
+                                    #aboutmyself {
+                                        flex-wrap: nowrap;
+                                        flex-direction: column;
+
+                                        .info {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:786px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #about {
+                            &Bottom {
+
+                                .aboutPicture {
+                                    background-position: -60px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #about {
+                            &Bottom {
+                                flex-direction: column;
+                                padding: 0 40px;
+
+                                .aboutPicture {
+                                    width: 100%;
+                                    background-repeat: no-repeat;
+                                    // border: solid 1px black;
+                                }
+
+                                .aboutInfo {
+                                    width: 100%;
+                                    gap: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:432px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #about {
+                            &Top {
+                                align-items: center;
+
+                                h1 {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                                #aboutText {
+                                    font-size: 15px;
+                                    text-align: center;
+                                }
+                            }
+
+                            &Bottom {
+                                .aboutPicture {
+                                    width: 100%;
+                                    height: 500px;
+                                }
+
+                                .aboutInfo {
+
+                                    #aboutmyself {
+                                        .info {
+                                            h1 {
+                                                font-size: 15px;
+                                            }
+
+                                            p {
+                                                font-size: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:368px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #about {
+                            &Top {
+
+                                h1 {
+                                    &::after {}
+                                }
+
+                                #aboutText {}
+                            }
+
+                            &Bottom {
+                                padding: 10px;
+                                align-items: center;
+
+                                .aboutPicture {}
+
+                                .aboutInfo {
+                                    width: 100%;
+
+                                    #aboutmyself {
+                                        align-items: center;
+
+                                        .info {
+                                            h1 {}
+
+                                            p {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:338px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #about {
+                            &Bottom {
+                                padding: 2px;
+
+
+                                .aboutInfo {
+                                    #jobName {
+                                        font-size: 30px;
+                                        text-align: center;
+                                    }
+
+                                    #aboutJob {
+                                        font-size: 14px;
+                                    }
+
+                                    #aboutmyself {
+
+                                        .info {
+                                            h1 {
+                                                font-size: 12px;
+                                            }
+
+                                            p {
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! -- ABOUT
+
+//! FACTS
+
+@media screen and (max-width:744px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #facts {
+                            &Bottom {
+                                flex-wrap: wrap;
+                                gap: 20px;
+
+                                .container {
+                                    width: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:505px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #facts {
+                            &Top {
+                                padding: 10px 0;
+                                align-items: center;
+                                gap: 10px;
+
+                                h1 {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                                p {
+                                    text-align: center;
+                                }
+                            }
+
+                            &Bottom {
+                                flex-wrap: wrap;
+                                gap: 20px;
+                                padding: 10px 0;
+
+                                .container {
+                                    width: 40%;
+                                    padding: 0;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 0;
+                                    height: auto;
+
+                                    &Right {
+                                        width: 100%;
+                                        margin: 0;
+                                        align-items: center;
+
+                                        .aboutContainer {
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:415px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #facts {
+                            &Top {
+                                h1 {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                                p {
+                                    text-align: center;
+                                }
+                            }
+
+                            &Bottom {
+                                flex-wrap: nowrap;
+                                flex-direction: column;
+                                gap: 10px;
+                                padding: 10px;
+
+                                .container {
+                                    width: 100%;
+                                    height: 140px;
+                                    padding: 5px;
+                                    flex-direction: row;
+
+                                    i {
+                                        margin-top: -10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! -- FACTS
+
+//! SKILLS
+
+@media screen and (max-width:929px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #skills {
+                            &Bottom {
+                                flex-direction: column;
+
+                                .leftLanguages,
+                                .rightLanguages {
+                                    height: auto;
+                                    width: 100%;
+                                    padding: 0 20px;
+                                }
+
+                                .container {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:580px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #skills {
+                            &Top {
+                                align-items: center;
+
+                                h1 {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                                p {
+                                    // text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! -- SKILLS
+
+//! RESUME
+
+@media screen and (max-width: 727px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #resume {
+                            &Bottom {
+                                flex-direction: column;
+                                gap: 20px;
+
+                                #left,
+                                #right {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 531px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #resume {
+                            &Top {
+                                padding: 10px;
+
+                                h1 {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                                p {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! -- RESUME
+
+//! PORTFOLIO
+
+@media screen and (max-width:1120px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #portfolio {
+                            &Bottom {
+                                #portfoliosImages {
+                                    .card {
+                                        width: 22%;
+                                        height: 200px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:810px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #portfolio {
+                            &Bottom {
+                                #portfoliosImages {
+                                    .card {
+                                        width: 48%;
+                                        height: 400px;
+                                        border: solid 1px lightblue;
+                                        background-position: -100px 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:627px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #portfolio {
+                            &Bottom {
+                                #portfoliosImages {
+                                    .card {
+                                        width: 48%;
+                                        height: 270px;
+                                        border: solid 1px lightblue;
+                                        background-position: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:501px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #portfolio {
+                            left: 0;
+                            padding: 50px 10px;
+
+                            &Top {
+                                align-items: center;
+
+                                h1 {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                                p {
+                                    text-align: center;
+                                }
+                            }
+
+                            &Bottom {
+                                #portfoliosImages {
+                                    .card {
+                                        width: 100%;
+                                        height: 350px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:377px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #portfolio {
+
+                            &Top {
+                                h1 {
+                                    &::after {}
+                                }
+
+                                p {}
+                            }
+
+                            &Bottom {
+                                #controlButtons {
+                                    button {
+                                        padding: 0 10px;
+                                    }
+                                }
+
+                                #portfoliosImages {
+                                    .card {
+                                        width: 100%;
+                                        height: 350px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! -- PORTFOLIO
+
+//! SERVICES
+
+@media screen and (max-width:850px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #services {
+                            &Bottom {
+                                gap: 10px;
+
+                                .container {
+                                    width: 48%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:642px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #services {
+                            &Bottom {
+
+                                .container {
+                                    width: 48%;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    margin: 35px 0 0 0;
+
+                                    .textArea {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:515px) {
+    body {
+        .website {
+            .right {
+                .rightContainer {
+                    .rightInside {
+                        #services {
+                            &Top {
+                                gap: 10px;
+                                align-items: center;
+
+                                h1 {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                                p {
+                                    text-align: center;
+                                }
+                            }
+
+                            &Bottom {
+                                flex-wrap: nowrap;
+                                flex-direction: column;
+                                align-items: center;
+
+                                .container {
+                                    width: 90%;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    // margin: 35px 0 0 0;
+
+                                    .textArea {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! -- SERVICES
