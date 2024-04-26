@@ -17,8 +17,6 @@ setInterval(() => {
         sliderDigit += 1;
     }
     slider.style.transform = `translateX(${-translateXValue}px)`
-    // console.log(isOpenMenu);
-    // console.log(menu.style.display);
 }, 3000);
 
 //! -- SLIDER
@@ -32,26 +30,6 @@ age.textContent = date.getFullYear() - 2002
 //! -- ABOUT
 
 //! FACTS
-
-
-// const username = 'elchineyvazli';
-// let projectCount = document.getElementsByClassName("projectCount");
-
-// fetch(`https://api.github.com/users/${username}/repos`, {
-//     headers: {
-//         Authorization: `token ${token}`
-//     }
-// })
-//     .then(response => response.json())
-//     .then(data => {
-//         // console.log(data.public_repos);
-//         for (let i = 0; i < projectCount.length; i++) {
-//             projectCount[i].textContent = data.length;
-//         }
-//     })
-//     .catch(error => {
-//         console.error('Hata:', error);
-//     });
 
 let happyClients = document.getElementsByClassName("happyClients")[0];
 happyClients.textContent = "0"
@@ -660,6 +638,10 @@ navButtons[2].addEventListener("click", function () {
 
 //! -- RESPONSIVE NAVBAR
 
+if (document.body.offsetWidth < 1400) {
+    responsive_navbar.style.display = "none"
+}
+
 let controlButtons = document.getElementById("controlButtons");
 controlButtons.children[0].addEventListener('click', function () {
     controlButtons.children[0].style.color = "#00A6EB";
@@ -669,7 +651,6 @@ controlButtons.children[0].addEventListener('click', function () {
         }
     }
     portfoliosImages.innerHTML = "";
-    console.log(cards);
     for (let i = 0; i < cards.length - 1; i++) {
         let card = document.createElement('div');
         let cardBottom = document.createElement('div');
